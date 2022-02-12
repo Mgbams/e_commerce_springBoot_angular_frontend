@@ -1,0 +1,10 @@
+<mat-card class="article-details-container" *ngIf="articleDetail">
+    <mat-card-title>{{articleDetail.name}}</mat-card-title>
+    <mat-card-content>
+        <p><strong>Price: </strong>{{articleDetail.price | currency:'EUR'}}</p>
+        <p><strong>Quantities:</strong> {{articleDetail.quantity}}</p>
+        <p class="desc-tag"><strong>Description:</strong> </p>
+      <p class="desc-tag">{{articleDetail.description}}</p>
+    </mat-card-content>
+   
+  </mat-card>
